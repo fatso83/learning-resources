@@ -1,6 +1,6 @@
 # DIY-DI
 
-> By Chad Parry
+> [By Chad Parry](https://blacksheep.parry.org/archives/diy-di)
 
 ## Do-It-Yourself Dependency Injection
 
