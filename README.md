@@ -28,7 +28,7 @@ It does away with all the magic in favor of moving all construction the static `
 
 Chad's [original blog entry](https://blacksheep.parry.org/archives/diy-di) is still online, with all files, but in case it goes down I made a copy of the [original pdf](./assets/2010-chad-parry-DIY-DI.pdf).
 For easy viewing I manually created a [Markdown version](./2010-diy-di-chad-parry/DIY_DI.md) of the pdf and unzipped
-the [code examples](./2010-diy-di-chad-parry/java).
+the [code examples](./2010-diy-di-chad-parry/src).
 
 #### Related:
 - the old internal [Google Guide on Writing Testable Code](https://github.com/mhevery/guide-to-testable-code?) is quite succinct.
