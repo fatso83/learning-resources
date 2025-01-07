@@ -32,3 +32,10 @@ the [code examples](./2010-diy-di-chad-parry/src).
 
 #### Related:
 - the old internal [Google Guide on Writing Testable Code](https://github.com/mhevery/guide-to-testable-code?) is quite succinct.
+
+### Testing Through the Domain: the example (Anders Sveen)
+A [full repository on Github](https://github.com/anderssv/the-example/) with working code and Markdown documents explaining the intent and workings of how to do effective testing through the domain using Fakes. Really cleared up some misconceptions for me and made it much easier to adopt and understand.
+Also goes for full manual DI, but instead of the factories of the DIY DI approach he has choses to use a DI Container that holds all the dependencies.
+
+Related:
+- Asgaut Mjølnes' ["Use of Fakes for domain driven design and fast feedback loop"](https://asgaut.com/use-of-fakes-for-domain-driven-design-and-fast-feedback-loop/)
