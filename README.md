@@ -51,3 +51,13 @@ Use real code if possible - but weigh against potential downsides, fall back to 
 - [Original link](https://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html)
 - [PDF](./.assets/Google Testing Blog_ Increase Test Fidelity By Avoiding Mocks.pdf)
 
+### Google Testing Blog: Increase Test Fidelity By Avoiding Mocks
+
+> While useful, the test pyramid lacks the details you need as your test suite grows and you face challenging trade-offs. To scale your test suite, go beyond the test pyramid. The SMURF mnemonic is an easy way to remember the tradeoffs to consider when balancing your test suite
+
+Speed (faster = bette), Maintanability (too much code gets expensive, trim, balance), Utilization (use fewer resources), Reliability (fail for important reasons), Fidelity (High-fidelity tests come closer to approximating real operating conditions (e.g., real databases or traffic loads) and better predict the behavior of our production systems)
+
+
+- [Original link](https://testing.googleblog.com/2024/10/smurf-beyond-test-pyramid.html)
+- [PDF](./.assets/Google Testing Blog_ SMURF_ Beyond the Test Pyramid.pdf)
+
