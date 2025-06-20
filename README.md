@@ -31,7 +31,7 @@ For easy viewing I manually created a [Markdown version](./2010-diy-di-chad-parr
 the [code examples](./2010-diy-di-chad-parry/src).
 
 #### Related:
-- the old internal [Google Guide on Writing Testable Code](https://github.com/mhevery/guide-to-testable-code?) is quite succinct.
+- Miško Hevery's [Google Guide on Writing Testable Code](https://github.com/mhevery/guide-to-testable-code?) is quite succinct.
 
 ### Testing Through the Domain: the example (Anders Sveen)
 A [full repository on Github](https://github.com/anderssv/the-example/) with working code and Markdown documents explaining the intent and workings of how to do effective testing through the domain using Fakes. Really cleared up some misconceptions for me and made it much easier to adopt and understand.
@@ -39,3 +39,15 @@ Also goes for full manual DI, but instead of the factories of the DIY DI approac
 
 Related:
 - Asgaut Mjølnes' ["Use of Fakes for domain driven design and fast feedback loop"](https://asgaut.com/use-of-fakes-for-domain-driven-design-and-fast-feedback-loop/)
+
+### Google Testing Blog: Increase Test Fidelity By Avoiding Mocks
+
+Main takeaway:
+
+> The fidelity of a test refers to how closely the behavior of the test resembles the behavior of the production code. A test with higher fidelity gives you higher confidence that your code will work properly.
+
+Use real code if possible - but weigh against potential downsides, fall back to fakes otherwise, and if there really is no other way: resort to mocking.
+
+- [Original link](https://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html)
+- [PDF](./.assets/Google Testing Blog_ Increase Test Fidelity By Avoiding Mocks.pdf)
+
