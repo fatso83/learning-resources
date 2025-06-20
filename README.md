@@ -26,7 +26,7 @@ In his [blog](https://web.archive.org/web/20121003131612/http://misko.hevery.com
 
 It does away with all the magic in favor of moving all construction the static `main` method and a bunch of providers and factories (glue code), ensuring no business code is constructing its own dependencies.
 
-Chad's [original blog entry](https://blacksheep.parry.org/archives/diy-di) is still online, with all files, but in case it goes down I made a copy of the [original pdf](./assets/2010-chad-parry-DIY-DI.pdf).
+Chad's [original blog entry](https://blacksheep.parry.org/archives/diy-di) is still online, with all files, but in case it goes down I made a copy of the [original pdf](./.assets/2010-chad-parry-DIY-DI.pdf).
 For easy viewing I manually created a [Markdown version](./2010-diy-di-chad-parry/DIY_DI.md) of the pdf and unzipped
 the [code examples](./2010-diy-di-chad-parry/src).
 
