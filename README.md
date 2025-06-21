@@ -25,7 +25,8 @@ by creating ([Google Guice][guice], the original AngularJS, Qwik and more.
 
 ### The Google Guide on Writing Testable Code
 Miško Hevery's [Google Guide on Writing Testable Code](https://github.com/mhevery/guide-to-testable-code) 
-summarises much of the blog articles. It is relatively short and succinct.
+(pdf and markdown versions) summarises much of the blog articles. Relatively short and succinct, with 
+loads of examples.
 
 #### Related
 
@@ -36,7 +37,7 @@ summarises much of the blog articles. It is relatively short and succinct.
 Speed (faster = bette), Maintanability (too much code gets expensive, trim, balance), Utilization (use fewer resources), Reliability (fail for important reasons), Fidelity (High-fidelity tests come closer to approximating real operating conditions (e.g., real databases or traffic loads) and better predict the behavior of our production systems)
 
 [smurf-link]: https://testing.googleblog.com/2024/10/smurf-beyond-test-pyramid.html
-[smurf-pdf]: ./.assets/Google Testing Blog_ SMURF_ Beyond the Test Pyramid.pdf
+[smurf-pdf]: ./.assets/Google%20Testing%20Blog_%20SMURF_%20Beyond%20the%20Test%20Pyramid.pdf
 
 [Original][smurf-link] and [pdf][smurf-pdf]
 
@@ -61,8 +62,8 @@ Great article on how Asgaut and Anders worked on improving the state of Spareban
 
 > The fidelity of a test refers to how closely the behavior of the test resembles the behavior of the production code. A test with higher fidelity gives you higher confidence that your code will work properly.
 
-Use real code if possible - but weigh against potential downsides, fall back to fakes otherwise, and if there really is no other way: resort to mocking.
+Use real code if possible - but weigh against potential downsides, fall back to Fakes, and if there really is no other way: resort to mocking.
 
 [test-fidelity-link]: https://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html
-[test-fidelity-pdf]: ./.assets/Google Testing Blog_ Increase Test Fidelity By Avoiding Mocks.pdf
+[test-fidelity-pdf]: ./.assets/Google%20Testing%20Blog_%20Increase%20Test%20Fidelity%20By%20Avoiding%20Mocks.pdf
 
