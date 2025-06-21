@@ -50,8 +50,9 @@ It does away with all the magic, in favor of moving all construction to the stat
 I extracted the source code and made a Markdown version you can see [here](./2010-diy-di-chad-parry).
 
 ### Testing Through the Domain: the example (Anders Sveen)
-A [full repository on Github](https://github.com/anderssv/the-example/) with working code and Markdown documents explaining the intent and workings of how to do effective testing through the domain using Fakes. Really cleared up some misconceptions for me and made it much easier to adopt and understand.
-Also goes for full manual DI, but instead of the factories of the DIY DI approach he has choses to use a DI Container that holds all the dependencies.
+A [full repository on Github](https://github.com/anderssv/the-example/) with working code and Markdown documents explaining the intent and workings of how to do effective testing through the domain using Fakes. Really cleared up some misconceptions for me and made it much easier to adopt and understand. Also goes for full manual DI, but instead of the factories of the DIY DI approach he has choses to use a DI Container that holds all the dependencies.
+
+The repo was originally created in 2022, but is still kept up-to-date in 2025, based on feedback from workshops and such.
 
 #### Related
 
