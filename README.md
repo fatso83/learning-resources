@@ -56,6 +56,9 @@ The repo was originally created in 2022, but is still kept up-to-date in 2025, b
 
 #### Related
 
+#### My presentation on Tests You Can Trust
+[A presentation](https://docs.google.com/presentation/d/e/2PACX-1vS8frdMD3PNr5yg1l2WNBJRpmQOoHFfan2bzbmrSOEX_mMsIO8Orlk7DeVozYlJDO3Lfe7bD-MqOh3e/pub?start=true&loop=false&delayms=10000) with strategies on building more trustworthy tests, including control of time, with [code examples (in a repo)](https://github.com/fatso83/supporting-code/tree/sjef/trusted-tests) for Java and Javascript.
+
 ##### Asgaut Mjølnes' ["Use of Fakes for domain driven design and fast feedback loop"](https://asgaut.com/use-of-fakes-for-domain-driven-design-and-fast-feedback-loop/). 
 Great article on how Asgaut and Anders worked on improving the state of Sparebank 1 testing.
 
