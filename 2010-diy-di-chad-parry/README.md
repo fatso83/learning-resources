@@ -6,5 +6,6 @@ Chad's [original blog entry](https://blacksheep.parry.org/archives/diy-di) is st
 
 ## Improvements on the original
 For easier viewing, the possibility of creating HTML and epub versions, I 
-- created a [Markdown version](./DIY_DI.md) of the pdf 
+- created a [Markdown version](./DIY_DI.md) of the pdf and an associated `./create-html-version.sh` script
+- created an [EPUB](../.assets/DIY_DI.epub) of the HTML from that Markdown
 - extracted the code examples and added a Maven build to be able to smoothly check out the source files in your IDE
