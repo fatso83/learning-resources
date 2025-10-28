@@ -1,8 +1,8 @@
-# About this version DIY-DI
+# About this version of DIY-DI
 
-This small article was a reference piece in the 2010's, as it proved how easy it is to do manual DI without being confused by the "magic" of the fancy IOC frameworks, so I thought it should be more easily accessible.
+This small article is a reference piece in the 2010's, as it proved how easy it is to do manual DI without being confused by the "magic" of the fancy IOC frameworks, so I thought it should make it more easily accessible. It bothered me that it was just available as a PDF render, so this repo fixes that (I have gotten Chad's approval, btw!).
 
-Chad's [original blog entry](https://blacksheep.parry.org/archives/diy-di) is still online, with all files, but in case it goes down I saved a copy of the [original pdf](../.assets/2010-chad-parry-DIY-DI.pdf).
+Chad's [original blog entry](https://blacksheep.parry.org/archives/diy-di) is still online, with all files, but in case it goes down I saved a copy of the [original pdf](../.assets/2010-chad-parry-DIY-DI.pdf). 
 
 ## Improvements on the original
 For easier viewing, the possibility of creating HTML and epub versions, I 
