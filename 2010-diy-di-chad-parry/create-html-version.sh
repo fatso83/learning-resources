@@ -31,12 +31,22 @@ cat << EOF > "$outfile"
     <head>
         <meta charset="UTF-8" >
         <title>$title</title>
+        <style>
+        table,tr,td {
+            border-style: solid;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 4px 2px;
+        line-height: 1.2;
+        }
+        </style>
     </head>
 
     <body>
 EOF
 
-markdown_py -x fenced_code "$doc" >> "$outfile"
+markdown_py -x tables -x fenced_code "$doc" >> "$outfile"
 
 cat << EOF >> "$outfile"
 
