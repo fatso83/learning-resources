@@ -16,65 +16,65 @@ The source code is about 1000 LOC of Java:
 ```
 src/
 ├── external
-│   └── java
-│       └── dipresentation
-│           ├── Account.java
-│           ├── ApplicationWrapper.java
-│           ├── MarketService.java
-│           ├── Provider.java
-│           ├── Providers.java
-│           └── ScopeCache.java
+│   └── java
+│       └── dipresentation
+│           ├── Account.java
+│           ├── ApplicationWrapper.java
+│           ├── MarketService.java
+│           ├── Provider.java
+│           ├── Providers.java
+│           └── ScopeCache.java
 └── main
     └── java
         └── dipresentation
             ├── step1_naive
-            │   ├── MarketClient.java
-            │   ├── Trade.java
-            │   └── TradingApplication.java
+            │   ├── MarketClient.java
+            │   ├── Trade.java
+            │   └── TradingApplication.java
             ├── step2_valueobjects
-            │   ├── BookingService.java
-            │   ├── MarketClient.java
-            │   ├── Trade.java
-            │   └── TradingApplication.java
+            │   ├── BookingService.java
+            │   ├── MarketClient.java
+            │   ├── Trade.java
+            │   └── TradingApplication.java
             ├── step3_constructorinjection
-            │   ├── BookingService.java
-            │   ├── MarketClient.java
-            │   ├── Trade.java
-            │   └── TradingApplication.java
+            │   ├── BookingService.java
+            │   ├── MarketClient.java
+            │   ├── Trade.java
+            │   └── TradingApplication.java
             ├── step4_trivialconstructors
-            │   ├── BookingService.java
-            │   ├── MarketClient.java
-            │   ├── Trade.java
-            │   └── TradingApplication.java
+            │   ├── BookingService.java
+            │   ├── MarketClient.java
+            │   ├── Trade.java
+            │   └── TradingApplication.java
             ├── step5_thinharness
-            │   ├── BookingService.java
-            │   ├── MarketClient.java
-            │   ├── Trade.java
-            │   ├── TradingApplication.java
-            │   └── TradingArgs.java
+            │   ├── BookingService.java
+            │   ├── MarketClient.java
+            │   ├── Trade.java
+            │   ├── TradingApplication.java
+            │   └── TradingArgs.java
             ├── step6_injector
-            │   ├── BookingService.java
-            │   ├── MarketClient.java
-            │   ├── Trade.java
-            │   ├── TradingApplication.java
-            │   ├── TradingArgs.java
-            │   └── TradingInjector.java
+            │   ├── BookingService.java
+            │   ├── MarketClient.java
+            │   ├── Trade.java
+            │   ├── TradingApplication.java
+            │   ├── TradingArgs.java
+            │   └── TradingInjector.java
             ├── step7_demeter
-            │   ├── BookingService.java
-            │   ├── MarketClient.java
-            │   ├── SettlementCalculator.java
-            │   ├── Trade.java
-            │   ├── TradingApplication.java
-            │   ├── TradingArgs.java
-            │   └── TradingInjector.java
+            │   ├── BookingService.java
+            │   ├── MarketClient.java
+            │   ├── SettlementCalculator.java
+            │   ├── Trade.java
+            │   ├── TradingApplication.java
+            │   ├── TradingArgs.java
+            │   └── TradingInjector.java
             ├── step8_providers
-            │   ├── BookingService.java
-            │   ├── MarketClient.java
-            │   ├── SettlementCalculator.java
-            │   ├── Trade.java
-            │   ├── TradingApplication.java
-            │   ├── TradingArgs.java
-            │   └── TradingInjector.java
+            │   ├── BookingService.java
+            │   ├── MarketClient.java
+            │   ├── SettlementCalculator.java
+            │   ├── Trade.java
+            │   ├── TradingApplication.java
+            │   ├── TradingArgs.java
+            │   └── TradingInjector.java
             └── step9_scopes
                 ├── ApplicationScope.java
                 ├── BookingService.java
