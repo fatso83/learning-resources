@@ -71,3 +71,45 @@ Use real code if possible - but weigh against potential downsides, fall back to 
 [test-fidelity-link]: https://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html
 [test-fidelity-pdf]: ./.assets/Google%20Testing%20Blog_%20Increase%20Test%20Fidelity%20By%20Avoiding%20Mocks.pdf
 
+## Generating test data
+
+My two favorites both combine the _Object Mother_ pattern and the _Test Data Builders_ pattern. The Java variant described by Jonas Geiregat in [Mastering the Object Mother](https://jonasg.io/posts/object-mother/) ([PDF](.assets/2023-06-06-jonasg-mastering-object-mother.pdf)) looks very nice in the default version (described multiple places, as early as 2007):
+```java
+Invoice invoice = InvoiceMother.invoice()
+        .withInvoiceItems(
+            new InvoiceItem("Product A", Amount.EUR(100.00), Tax.vatPercentage(21)),
+            new InvoiceItem("Product B", Amount.EUR(100.00), Tax.vatPercentage(21)))
+        .build();
+
+Amount amount = invoice.getVatAmount();
+
+assertThat(amount).isEqualTo(Amount.EUR(42))
+```
+
+> 👉️ It’s important to stress the prefilled nature of a mother. Calling InvoiceMother.invoice().build() will return a fully fledged Invoice were all fields are filled in containing sensible default values.
+
+### What if you just want to change one of the default fields slightly?
+In the code above you need to fully build and replace the InvoiceItem. There is a better way by using a `Consumer` ("lambda") that returns the internal builder.
+```java
+InvoiceMother.invoice()
+        .withShippingAddress(b -> b.withCountry(Country.US))
+        .build();
+```
+I absolutely adore this ❤️. This does away with my main gripe with test data builders. The implementation looks like
+```java
+public Builder withShippingAddress(Consumer<AddressMother.Builder> addressConsumer) {
+    Address.Builder builder = AddressMother.address();
+    addressConsumer.accept(builder)
+    this.shippingAddress = builder.build();    
+    return this;
+}
+```
+
+### Kotlin version
+I do find the Java version a tad verbose when creating the backing utility methods, and when working in Kotlin you can get away with a pretty minimal setup. This is described in [the Medium article by Anders Sveen](https://anderssv.medium.com/easy-and-maintainable-test-data-the-kotlin-way-9ecbbf53d822) ([PDF](.assets/2020-02-27-sveen-maintainable-kotlin-object-mother-test-data-builder.pdf)).
+
+By using extension methods (on the `companion object`), you can get to write code like this:
+```kotlin
+        val order = Order.validOrder()
+            .copy(deviations = listOf(Deviation("Could not find destination")))
+```
