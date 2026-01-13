@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+python3 scripts/update-toc.py
+
+if [ -f Index.md ] && ! git diff --quiet Index.md; then
+  git add Index.md
+elif [ -f index.md ] && ! git diff --quiet index.md; then
+  git add index.md
+fi
